@@ -387,31 +387,3 @@ Once accepted, you will be prompted to select a certitification authority. Choos
 ![image](https://user-images.githubusercontent.com/1026425/205650564-6c464df6-fad6-4ee9-84a9-d46935223e45.png)
 
 *The user is now ready to login to the client workstation using BlokSec Windows Passwordless Logon*
-
-## Example logon flow
-
-* Log out of the workstation to return to the logon screen
-* Click the newly created BlokSec virtual smart card icon
-
-![image](https://user-images.githubusercontent.com/1026425/205650947-cd325ff9-bba3-448f-959e-fcb7cbe9a766.png)
- 
- * Do not type in a PIN (no PINs or passwords are required!) just click the ➡ button to submit
-
-![image](https://user-images.githubusercontent.com/1026425/205651595-c967826b-7853-479a-8700-169252a8ec0b.png)
-
-* A push notification will be sent to the user's BlokSec mobile authenticator to authenticate and authorize the logon to the client workstation; the user accepts the request and provides their authentication to the mobile device (i.e., facial recognition, fingerprint, or PIN as supported by the user's device)
-
-![image](https://user-images.githubusercontent.com/1026425/205651651-746b07d9-1cb6-4475-bf74-7d86536cb61a.png)
-
-![image](https://user-images.githubusercontent.com/1026425/205651992-4ed45775-01bc-4602-b8c0-51a3e9d6523a.png)
-
-*The user is then successfully authenticated and logged into the client workstation*
-
-![image](https://user-images.githubusercontent.com/1026425/205652072-8b1d47c6-39ab-4a01-8bb1-efad3ff0245e.png)
-
-![image](https://user-images.githubusercontent.com/1026425/205652297-62c370c4-b1cb-4312-8bf0-599ce9443819.png)
-
-
-
-
-
