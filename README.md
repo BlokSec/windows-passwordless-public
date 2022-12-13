@@ -1,4 +1,4 @@
-# BlokSec Windows Passwordless Logon credential provider
+# BlokSec Windows Passwordless Logon Credential Provider
 This credential provider allows you to enjoy the security and convenience of BlokSec's passwordless authentication on your Windows workstations and servers. The credential provider acts as a virtual smart card provider, interacting with the Windows operating system using native capabilities provided by Microsoft and the secure trusted platform module (TPM) of the machine to keep all user credentials safe. This allows the BlokSec service to securely log users into the domain without requiring the installation of any agents or DLLs on your organization's domain controllers. The only software required is the BlokSec Windows Passwordless Longon credential provider on client Windows 10/11 workstations.
 
 The BlokSec Windows Passwordless Logon credential provider creates a virtual smart card on the client workstation (communicating with the AD CS during this process), and during logon the credential provider returns a cryptographically secure response to the operating system that cannot be phished, brute-forced, or forged.
