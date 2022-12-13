@@ -3,6 +3,8 @@ This credential provider allows you to enjoy the security and convenience of Blo
 
 The BlokSec Windows Passwordless Logon credential provider creates a virtual smart card on the client workstation (communicating with the AD CS during this process), and during logon the credential provider returns a cryptographically secure response to the operating system that cannot be phished, brute-forced, or forged.
 
+[![Button Download]][Link] 
+
 **Table of Contents**
 1. [Prerequsites](#prerequisites)
 2. [Client Installation](#client-installation)
@@ -100,3 +102,11 @@ The last step, if it has not already been completed, is to [create the user's ac
 ![image](https://user-images.githubusercontent.com/1026425/205652072-8b1d47c6-39ab-4a01-8bb1-efad3ff0245e.png)
 
 ![image](https://user-images.githubusercontent.com/1026425/205652297-62c370c4-b1cb-4312-8bf0-599ce9443819.png)
+
+
+
+<!---------------------------------------------------------------------------->
+
+[Button Download]: https://img.shields.io/badge/Download-37a779?style=for-the-badge&logoColor=white&logo=DocuSign
+
+[Link]: https://github.com/BlokSec/windows-passwordless-public/releases/download/v0.1/BlokSec.Installer.exe 'Link with example title.'
