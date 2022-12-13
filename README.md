@@ -32,8 +32,15 @@ In order to enable passwordless Windows logon, the BlokSec credential provider f
    ![image](https://user-images.githubusercontent.com/1026425/204528540-0d4473f7-ad25-46bc-a31c-34077aa81d80.png)
 3. Click **Finish** 
 
-## User Registration
-Once the BlokSec installer has completed installing the BlokSec Windows Passwordless Logon credential provider, an administrator must configure the BlokSec API credentials (application DID and secret) and register the user's virtual smart card before the user can logon. 
+## Virtual Smart Card Registration
+
+### Pre-requisite
+
+To complete this step you must have a Windows Password application configured in the BlokSec administration console (this is where you will find the required **Application ID** (a.k.a. `appDID`) and **Application Secret** (a.k.a. `appSecret`)
+
+### Configuration
+
+Once the BlokSec installer has completed installing the BlokSec Windows Passwordless Logon credential provider, an administrator must configure the BlokSec API credentials (Application ID a.k.a. `appDID` and Application Secret a.k.a. `appSecret`) and register the user's virtual smart card before the user can logon. 
 
 > Note: in the next version, these steps will be incorporated in the installer to avoid the requirement for these manual steps
 
