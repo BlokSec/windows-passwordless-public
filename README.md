@@ -35,6 +35,8 @@ In order to enable passwordless Windows logon, the BlokSec credential provider f
 
 > **Warning**: In some environments, Windows Defender blocks the installation due to the installer not being properly signed (it can be incorrectly identified as malware). To overcome this difficulty, you must [provide an exclusion for Windows Defender](docs/Windows%20Defender%20Exclusion.md).
 
+*Note that the Microsoft Visual C++ redistributable libraries are required as a pre-requisite. If not already present on the client workstation, the installer will silently install them.*
+
 1. Execute the `BlokSec Installer.exe` executable - administrative permission will be required
 2. Click **Install**
    
@@ -58,22 +60,22 @@ Once the BlokSec installer has completed installing the BlokSec Windows Password
 
     a.  Create a virtual smart card for the account name.
     
-        BlockSecCardUtility.exe /an=<Account Name> /cc
+        BlokSecCardUtility.exe /an=<Account Name> /cc
     
     b.  Register Application DID to the local machine for the account name.
     
-        BlockSecCardUtility.exe /an=<Account Name> /appDID=<Application DID>
+        BlokSecCardUtility.exe /an=<Account Name> /appDID=<Application DID>
      
     c.  Register Application Secret to the local machine for the account name.
     
-        BlockSecCardUtility.exe /an=<Account Name> /appSecret=<Application Secret>
+        BlokSecCardUtility.exe /an=<Account Name> /appSecret=<Application Secret>
      
 ### Enroll the Smart Card Certificate to the BlokSec Virtual Smart Card
 1. Logon to windows with user credential for which you want to enable passwordless windows logon.
 
 2. Run the following command to enroll the Windows logon certificate. Make sure Certificate Authority is configured for the domain and issuance of smart card logon certificates are enabled for logged-in users.
     
-        BlockSecCardUtility.exe /an=<Account Name> /ec
+        BlokSecCardUtility.exe /an=<Account Name> /ec
 
 <hr>
 
